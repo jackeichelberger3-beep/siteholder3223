@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en" data-menu="side">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Site — home</title>
+    <meta name="description" content="A simple site: games, info pages and notes, all in one place." />
+    <link rel="stylesheet" href="./assets/site.css" />
+  </head>
+  <body data-root=".">
+    <header id="site-header"></header>
+
+    <div class="site-body">
+      <aside id="site-sidebar"></aside>
+
+      <div class="main">
+        <main class="page">
+          <div class="page-head">
+            <p class="mono">Standalone site</p>
+            <h1 id="site-title">My Site</h1>
+            <p class="lead" id="site-tagline">
+              Games, notes and pages — written in one folder, listed once. This copy is plain HTML, CSS and
+              JavaScript, ready for GitHub Pages.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="./pages/games.html">Play a game</a>
+              <a class="btn" href="./pages/github-setup.html">Put it online</a>
+              <a class="btn" href="./pages/changelog.html">Changelog</a>
+            </div>
+          </div>
+
+          <section class="section">
+            <h2>Every page</h2>
+            <p>Built from one list, so adding a page is a file and a line.</p>
+            <div class="grid-2" id="home-cards" style="margin-top: 20px"></div>
+          </section>
+
+          <section class="section">
+            <h2>How this version is put together</h2>
+            <div class="grid-3">
+              <div class="card">
+                <span class="step-num mono">01</span>
+                <h3>One file per page</h3>
+                <p>Every page in the pages folder is a complete HTML file, and each game keeps its CSS and script inside it.</p>
+              </div>
+              <div class="card">
+                <span class="step-num mono">02</span>
+                <h3>One list to rule the menu</h3>
+                <p>The page list at the top of the script builds the side menu, the drop-down, the search and these cards.</p>
+              </div>
+              <div class="card">
+                <span class="step-num mono">03</span>
+                <h3>A folder for releases</h3>
+                <p>Each changelog entry is a JSON file. The page reads the folder index and renders the timeline.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2>Ready for GitHub Pages</h2>
+            <p>
+              There is no build step. Upload this folder to a repository, switch Pages on, and the same files are
+              live. The setup guide is written for a first repository.
+            </p>
+            <div class="btn-row">
+              <a class="btn btn-primary" href="./pages/github-setup.html">GitHub setup guide</a>
+              <a class="btn" href="./README.md" download>Download the README</a>
+            </div>
+          </section>
+        </main>
+
+        <footer id="site-footer"></footer>
+      </div>
+    </div>
+
+    <button type="button" class="exit-btn" data-action="exit-fullscreen">Exit full screen</button>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

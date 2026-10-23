@@ -1,0 +1,12 @@
+{
+  "version": "1.2.0",
+  "date": "2026-10-23",
+  "title": "Games and HTML pages",
+  "type": "Added",
+  "summary": "Two playable games, a page written as one HTML file, and the changelog folder that fills this frame.",
+  "items": [
+    "Tic-tac-toe and memory match, each in its own file",
+    "Reaction test: a complete page in a single HTML file",
+    "Changelog read from this folder, one JSON file per release"
+  ]
+}

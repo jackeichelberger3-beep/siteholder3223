@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "date": "2026-10-22",
+  "title": "First build",
+  "type": "Launched",
+  "summary": "The site shell: side menu or drop-down, search, full screen and the page list.",
+  "items": [
+    "Side menu and drop-down menu, switchable in the header",
+    "Search across every page",
+    "Full screen mode for games and reading"
+  ]
+}

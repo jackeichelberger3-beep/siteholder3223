@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en" data-menu="side">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — My Site</title>
+    <link rel="stylesheet" href="../assets/site.css" />
+  </head>
+  <body data-root="..">
+    <header id="site-header"></header>
+
+    <div class="site-body">
+      <aside id="site-sidebar"></aside>
+
+      <div class="main">
+        <main class="page">
+          <div class="page-head">
+            <p class="mono">Info page</p>
+            <h1>About</h1>
+            <p class="lead">A sample info page. Copy the file, change the words, keep the structure.</p>
+          </div>
+
+          <section class="section">
+            <p>
+              Everything on this site lives in one place: a folder of pages. Some are games you can play straight from
+              the menu, others are pages like this where you write down whatever is worth keeping.
+            </p>
+            <p>
+              There is no editor to learn and nothing to publish separately. A page is a file, the page list gives it a
+              name and a link, and the menu picks it up automatically.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2>How the site is put together</h2>
+            <table class="table">
+              <tbody>
+                <tr><td class="mono">Pages</td><td>pages/ — info pages and games side by side</td></tr>
+                <tr><td class="mono">Page list</td><td>assets/app.js — one entry per page</td></tr>
+                <tr><td class="mono">Settings</td><td>data/site.json — name, tagline, contact email, menu default</td></tr>
+                <tr><td class="mono">Releases</td><td>changelog/ — one JSON file per release</td></tr>
+                <tr><td class="mono">Content</td><td>Written directly in the HTML, no database</td></tr>
+              </tbody>
+            </table>
+          </section>
+
+          <section class="section">
+            <h2>Why keep it this simple</h2>
+            <p>
+              Files stay readable, changes stay small, and every page can be read on its own years from now. It also
+              means the whole site can live in a normal repository, with the home page, the readme and the pages folder
+              in one place.
+            </p>
+          </section>
+        </main>
+
+        <footer id="site-footer"></footer>
+      </div>
+    </div>
+
+    <button type="button" class="exit-btn" data-action="exit-fullscreen">Exit full screen</button>
+    <script src="../assets/app.js"></script>
+  </body>
+</html>
